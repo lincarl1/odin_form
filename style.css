@@ -1,4 +1,42 @@
+:root {
+    --padding: 2em;
+}
+
 body {
-    height: 100%;
+    /* height: 100%; */
     margin: 0;
+}
+
+.registration-page {
+    display: flex;
+    height: 100vh;
+}
+
+.left {
+    flex: 0 0 35%;
+}
+
+.right {
+    flex: 1;
+}
+
+.registration-page-graphic
+{
+    /* display: flex; */
+    height: 100vh;
+}
+
+#form-image {
+    width: 100%;
+    height: 100%;
+    /* height: inherit; */
+    /* position: absolute; */
+    /* object-fit: cover; */
+    /* visibility: hidden; */
+}
+
+.image-credits {
+    position: absolute;
+    bottom: 2%;
+    left: 2%;
 }
