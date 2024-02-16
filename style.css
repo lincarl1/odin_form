@@ -5,6 +5,7 @@
 body {
     /* height: 100%; */
     margin: 0;
+    font-family: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 }
 
 .registration-page {
@@ -12,31 +13,111 @@ body {
     height: 100vh;
 }
 
-.left {
-    flex: 0 0 35%;
-}
+/* Left Side of Registration Page */
 
-.right {
-    flex: 1;
+.left {
+    flex: 0 0 30%;
 }
 
 .registration-page-graphic
 {
-    /* display: flex; */
     height: 100vh;
 }
 
 #form-image {
     width: 100%;
     height: 100%;
-    /* height: inherit; */
-    /* position: absolute; */
-    /* object-fit: cover; */
-    /* visibility: hidden; */
+}
+
+a {
+    color: #ffffff;
 }
 
 .image-credits {
     position: absolute;
-    bottom: 2%;
-    left: 2%;
+    bottom: 1%;
+    left: 1%;
+    color: #ffffff;
+}
+
+/* Right Side of Registration Page */
+
+.right {
+    flex: 1;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form {
+    width: 80%;
+    height: 60%;
+    display: flex;
+    border-radius: 25px;
+    box-shadow: 0px 0px 4px 4px grey;
+    margin: 1.5em;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    flex: auto;
+    overflow: scroll;
+    width: 80%;
+}
+
+.user-information {
+    display: flex;
+    flex-direction: column;
+    margin: 1.5em;
+}
+
+.information-field {
+    padding: 4px;
+}
+
+.information-field > div {
+    display: flex;
+    flex-direction: column;
+}
+
+input {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease;
+}
+  
+input.focus {
+    border: 2px solid green;
+    box-shadow: 2px 1px 2px 2px rgba(0, 0, 0, 0.1);
+}
+
+input.error {
+    border: 2px solid red;
+}
+
+.button {
+    flex: 1;
+}
+
+button {
+    background-color: #4caf50;
+    color: #ffffff;
+    padding: 12px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 40%;
+    margin: 1.5em;
+  }
+
+button:hover {
+    background-color: #45a049;
 }
